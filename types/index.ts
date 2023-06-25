@@ -14,7 +14,7 @@ export interface CustomButtonProps {
 export interface SetManufacturerProps {
     manufacturer: string;
     setManufacturer: (manufacturer: string) => void;
-}
+};
 
 export interface CarProps {
     city_mpg: number;
@@ -29,17 +29,17 @@ export interface CarProps {
     model: string;
     transmission: string;
     year: number;
-}
+};
 
 export interface CustomFilterProps {
     title: string;
-}
+};
 
 export interface CarDetailsProps {
     isOpen: boolean;
     closeModal: () => void;
     car: CarProps;
-}
+};
 
 export interface FilterProps {
     manufacturer: string;
@@ -48,3 +48,13 @@ export interface FilterProps {
     limit: number;
     model: string;
 };
+
+export interface OptionProps {
+    title: string,
+    value: string
+}
+
+export interface CustomFilterProps {
+    title: string;
+    options: OptionProps[];
+}
